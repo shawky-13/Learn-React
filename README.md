@@ -1,4 +1,4 @@
-## <h1 style="Font-weight:bold; color:yellow; text-align:center"> Learn React </h1>
+<h1 style="Font-weight:bold; color:yellow; text-align:center"> Learn React </h1>
 
 Some Notes From React Course
 This is Link of the Youtube Course : https://www.youtube.com/watch?v=x4rFhThSX04
@@ -65,7 +65,9 @@ Q. what does it mean for something to be "declerative" instead of "imperative"?
 
 => In programming:
 Declarative means you describe what you want to happen, not how to do it.
-Example: `<h1>Hello</h1>` (You declare that you want a heading.)
+
+Example: `<h1>Hello</h1>`
+(You declare that you want a heading.)
 
 Imperative means you describe how to do something, step by step.
 
