@@ -27,10 +27,26 @@ side by side without wrapping them in a single parent element. JSX expressions m
 
 Incorrect:
 
-`root.render(<h1>wlecome</h1> <p>hey baby</p>)`
+```
+root.render(
+    <h1>wlecome</h1>
+    <p>hey baby</p>
+    )
+```
 
 Correct:
-`root.render(<><h1>wlecome</h1><p>hey baby</p></>)`
+
+````
+
+root.render(
+<>
+
+<h1>wlecome</h1>
+<p>hey baby</p>
+</>
+)
+
+```
 
 ---------||------------------||------------||--------------------||------------------------||
 
@@ -42,9 +58,15 @@ Example: `<h1>Hello</h1>` (You declare that you want a heading.)
 
 Imperative means you describe how to do something, step by step.
 Example:
-`const h1 = document.createElement('h1');`
-`h1.textContent = 'Hello';`
-`document.body.appendChild(h1);`
+
+```
+
+const h1 = document.createElement('h1');
+h1.textContent = 'Hello';
+document.body.appendChild(h1);
+
+```
+
 (You give instructions for each step.)
 
 Summary:
@@ -63,3 +85,10 @@ This makes your code more modular, reusable, and easier to manage.
 
 Summary:
 Composable means you can assemble bigger solutions from smaller, independent parts.
+
+```
+
+```
+
+```
+````
