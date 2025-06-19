@@ -1,0 +1,66 @@
+## where does React put all of the elements I create in JSX when i call root.reneder() ?
+
+=> The Elements that i create in JSX are put inside div that has a root id and
+    converted into a virtural DOM & React compares the real DOM then updates it.
+
+---------||------------------||------------||--------------------||------------------------||
+
+## What Would Show up in my console if I were to run this line of code 'console.log(<h1>Welcome</h1>);' ?
+
+=> The Output is React Element Object
+        {
+            type: "h1",
+            props: {children: "welcome"},
+            ....
+        }
+
+---------||------------------||------------||--------------------||------------------------||
+
+## what's wrong in this code ? root.render(<h1>wlecome</h1> <p>hey baby</p>)
+
+=> The problem is that you are trying to render two JSX elements
+ side by side without wrapping them in a single parent element. JSX expressions must have one parent.
+
+Incorrect:
+
+root.render(<h1>wlecome</h1> <p>hey baby</p>)
+
+Correct:
+root.render(
+  <>
+    <h1>wlecome</h1>
+    <p>hey baby</p>
+  </>
+)
+
+---------||------------------||------------||--------------------||------------------------||
+
+## what does it mean for something to be "declerative" instead of "imperative"?
+
+=> In programming:
+Declarative means you describe what you want to happen, not how to do it.
+Example:  <h1>Hello</h1>  (You declare that you want a heading.)
+
+Imperative means you describe how to do something, step by step.
+Example:
+ const h1 = document.createElement('h1');
+h1.textContent = 'Hello';
+document.body.appendChild(h1);
+(You give instructions for each step.)
+
+Summary:
+Declarative: Focus on the result.
+Imperative: Focus on the process.
+
+---------||------------------||------------||--------------------||------------------------||
+
+## what does it mean for something to be "composable"?
+
+=> In programming, composable means you can build complex things by combining smaller,
+ reusable pieces together.
+
+For example, in React, you can create small components and then combine (compose) them to make larger UIs.
+ This makes your code more modular, reusable, and easier to manage.
+
+Summary:
+Composable means you can assemble bigger solutions from smaller, independent parts.
