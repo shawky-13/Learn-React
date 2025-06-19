@@ -1,4 +1,4 @@
-## ==> Learn React <==
+## =====================> Learn React <=====================
 
 Some Notes From React Course
 This is Link of the Youtube Course : https://www.youtube.com/watch?v=x4rFhThSX04
@@ -15,12 +15,28 @@ converted into a virtural DOM & React compares the real DOM then updates it.
 Q. What Would Show up in my console if I were to run this line of code `console.log(<h1>Welcome</h1>)` ?
 
 => The Output is React Element Object
-`{type: "h1",props: {children: "welcome"},....}`
+
+````
+{
+    type: "h1",
+    props: {children: "welcome"},
+    ....
+}
+    ```
 
 ---------||------------------||------------||--------------------||------------------------||
 
 Q. what's wrong in this code ?
-`root.render(<h1>wlecome</h1> <p>hey baby</p>)`
+
+````
+
+root.render(
+
+<h1>wlecome</h1>
+<p>hey baby</p>
+)
+
+```
 
 => The problem is that you are trying to render two JSX elements
 side by side without wrapping them in a single parent element. JSX expressions must have one parent.
@@ -28,15 +44,18 @@ side by side without wrapping them in a single parent element. JSX expressions m
 Incorrect:
 
 ```
+
 root.render(
-    <h1>wlecome</h1>
-    <p>hey baby</p>
-    )
+
+<h1>wlecome</h1>
+<p>hey baby</p>
+)
+
 ```
 
 Correct:
 
-````
+```
 
 root.render(
 <>
@@ -45,7 +64,6 @@ root.render(
 <p>hey baby</p>
 </>
 )
-
 ```
 
 ---------||------------------||------------||--------------------||------------------------||
@@ -60,11 +78,9 @@ Imperative means you describe how to do something, step by step.
 Example:
 
 ```
-
 const h1 = document.createElement('h1');
 h1.textContent = 'Hello';
 document.body.appendChild(h1);
-
 ```
 
 (You give instructions for each step.)
@@ -89,6 +105,3 @@ Composable means you can assemble bigger solutions from smaller, independent par
 ```
 
 ```
-
-```
-````
