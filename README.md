@@ -1,4 +1,4 @@
-<h1 style="Font-weight:bold; color:yellow; text-align:center"> Learn React </h1>
+## Learn React
 
 Some Notes From React Course
 This is Link of the Youtube Course : https://www.youtube.com/watch?v=x4rFhThSX04
