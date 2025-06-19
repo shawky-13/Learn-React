@@ -1,18 +1,18 @@
-                         ==>   Learn React   <==
+## ==> Learn React <==
 
 Some Notes From React Course
 This is Link of the Youtube Course : https://www.youtube.com/watch?v=x4rFhThSX04
 
 ---------||------------------||------------||--------------------||------------------------||
 
-## where does React put all of the elements I create in JSX when i call root.reneder() ?
+Q. where does React put all of the elements I create in JSX when i call root.reneder() ?
 
 => The Elements that i create in JSX are put inside div that has a root id and
 converted into a virtural DOM & React compares the real DOM then updates it.
 
 ---------||------------------||------------||--------------------||------------------------||
 
-## What Would Show up in my console if I were to run this line of code 'console.log(<h1>Welcome</h1>);' ?
+Q. What Would Show up in my console if I were to run this line of code 'console.log(<h1>Welcome</h1>);' ?
 
 => The Output is React Element Object
 {
@@ -23,7 +23,7 @@ props: {children: "welcome"},
 
 ---------||------------------||------------||--------------------||------------------------||
 
-## what's wrong in this code ? root.render(<h1>wlecome</h1> <p>hey baby</p>)
+Q. what's wrong in this code ? root.render(<h1>wlecome</h1> <p>hey baby</p>)
 
 => The problem is that you are trying to render two JSX elements
 side by side without wrapping them in a single parent element. JSX expressions must have one parent.
@@ -43,7 +43,7 @@ root.render(
 
 ---------||------------------||------------||--------------------||------------------------||
 
-## what does it mean for something to be "declerative" instead of "imperative"?
+Q. what does it mean for something to be "declerative" instead of "imperative"?
 
 => In programming:
 Declarative means you describe what you want to happen, not how to do it.
@@ -62,7 +62,7 @@ Imperative: Focus on the process.
 
 ---------||------------------||------------||--------------------||------------------------||
 
-## what does it mean for something to be "composable"?
+Q. what does it mean for something to be "composable"?
 
 => In programming, composable means you can build complex things by combining smaller,
 reusable pieces together.
