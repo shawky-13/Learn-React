@@ -1,4 +1,4 @@
-## =====================> Learn React <=====================
+## <h1 style="Font-weight:bold; color:yellow; text-align:center"> Learn React </h1>
 
 Some Notes From React Course
 This is Link of the Youtube Course : https://www.youtube.com/watch?v=x4rFhThSX04
@@ -16,26 +16,24 @@ Q. What Would Show up in my console if I were to run this line of code `console.
 
 => The Output is React Element Object
 
-````
+```
 {
     type: "h1",
     props: {children: "welcome"},
     ....
 }
-    ```
+```
 
 ---------||------------------||------------||--------------------||------------------------||
 
 Q. what's wrong in this code ?
 
-````
-
+```
 root.render(
 
 <h1>wlecome</h1>
 <p>hey baby</p>
 )
-
 ```
 
 => The problem is that you are trying to render two JSX elements
@@ -44,22 +42,17 @@ side by side without wrapping them in a single parent element. JSX expressions m
 Incorrect:
 
 ```
-
 root.render(
-
 <h1>wlecome</h1>
 <p>hey baby</p>
 )
-
 ```
 
 Correct:
 
 ```
-
 root.render(
 <>
-
 <h1>wlecome</h1>
 <p>hey baby</p>
 </>
@@ -75,6 +68,7 @@ Declarative means you describe what you want to happen, not how to do it.
 Example: `<h1>Hello</h1>` (You declare that you want a heading.)
 
 Imperative means you describe how to do something, step by step.
+
 Example:
 
 ```
@@ -101,7 +95,3 @@ This makes your code more modular, reusable, and easier to manage.
 
 Summary:
 Composable means you can assemble bigger solutions from smaller, independent parts.
-
-```
-
-```
