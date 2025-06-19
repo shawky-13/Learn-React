@@ -12,34 +12,25 @@ converted into a virtural DOM & React compares the real DOM then updates it.
 
 ---------||------------------||------------||--------------------||------------------------||
 
-Q. What Would Show up in my console if I were to run this line of code 'console.log(<h1>Welcome</h1>);' ?
+Q. What Would Show up in my console if I were to run this line of code `console.log(<h1>Welcome</h1>)` ?
 
 => The Output is React Element Object
-{
-type: "h1",
-props: {children: "welcome"},
-....
-}
+`{type: "h1",props: {children: "welcome"},....}`
 
 ---------||------------------||------------||--------------------||------------------------||
 
-Q. what's wrong in this code ? root.render(<h1>wlecome</h1> <p>hey baby</p>)
+Q. what's wrong in this code ?
+`root.render(<h1>wlecome</h1> <p>hey baby</p>)`
 
 => The problem is that you are trying to render two JSX elements
 side by side without wrapping them in a single parent element. JSX expressions must have one parent.
 
 Incorrect:
 
-root.render(<h1>wlecome</h1> <p>hey baby</p>)
+`root.render(<h1>wlecome</h1> <p>hey baby</p>)`
 
 Correct:
-root.render(
-<>
-
-<h1>wlecome</h1>
-<p>hey baby</p>
-</>
-)
+`root.render(<><h1>wlecome</h1><p>hey baby</p></>)`
 
 ---------||------------------||------------||--------------------||------------------------||
 
@@ -47,13 +38,13 @@ Q. what does it mean for something to be "declerative" instead of "imperative"?
 
 => In programming:
 Declarative means you describe what you want to happen, not how to do it.
-Example: <h1>Hello</h1> (You declare that you want a heading.)
+Example: `<h1>Hello</h1>` (You declare that you want a heading.)
 
 Imperative means you describe how to do something, step by step.
 Example:
-const h1 = document.createElement('h1');
-h1.textContent = 'Hello';
-document.body.appendChild(h1);
+`const h1 = document.createElement('h1');`
+`h1.textContent = 'Hello';`
+`document.body.appendChild(h1);`
 (You give instructions for each step.)
 
 Summary:
