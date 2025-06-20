@@ -113,3 +113,49 @@ function Welcome(props) {
 ```
 
 ---------||------------------||------------||--------------------||------------------------||
+
+Q. What is wrong of this code ?
+
+```
+function myComponent() {
+  return (<small>I'm tiny text</small>);
+}
+```
+
+=> Component Name Capitalization:
+React component names must start with an uppercase letter.
+Change mycomponent to MyComponent.
+
+Corrected code:
+
+```
+function MyComponent() {
+  return (<small>I'm tiny text</small>);
+}
+```
+
+---------||------------------||------------||--------------------||------------------------||
+
+Q. What is wrong of this code ?
+
+```
+function Header() {
+  return (<h1>Welcome</h1>);
+}
+
+root.render(
+Header()
+)
+```
+
+=>The issue is that you are calling the Header function (Header()) instead of passing it as a component to root.render.
+
+Correct:
+
+```
+root.render(
+  <Header />
+)
+```
+
+---------||------------------||------------||--------------------||------------------------||
