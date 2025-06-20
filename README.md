@@ -159,3 +159,38 @@ root.render(
 ```
 
 ---------||------------------||------------||--------------------||------------------------||
+
+A Fragment component in React is a special component that lets you group multiple elements without adding an extra node to the DOM.
+
+Why use it?
+Sometimes you want to return multiple elements from a component, but React components must return a single parent element. A Fragment solves this without adding an extra `<div>` or other wrapper.
+
+Syntax:
+
+```
+import React from 'react';
+
+function Example() {
+  return (
+    <React.Fragment>
+      <h1>Hello</h1>
+      <p>This is a fragment.</p>
+    </React.Fragment>
+  );
+}
+
+```
+
+Or, using the shorthand:
+
+```
+function Example() {
+  return (
+    <>
+      <h1>Hello</h1>
+      <p>This is a fragment.</p>
+    </>
+  );
+}
+
+```
