@@ -97,3 +97,19 @@ This makes your code more modular, reusable, and easier to manage.
 
 Summary:
 Composable means you can assemble bigger solutions from smaller, independent parts.
+
+---------||------------------||------------||--------------------||------------------------||
+
+Q. What is a React Component ?
+
+=> A React component is a reusable, self-contained piece of code that defines part of a user interface in a React application. Components can be written as JavaScript functions or classes, and they return JSX to describe what should appear on the screen. Components can also accept inputs called props and manage their own state.
+
+Example (function component):
+
+```
+function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+```
+
+---------||------------------||------------||--------------------||------------------------||
