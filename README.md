@@ -194,3 +194,22 @@ function Example() {
 }
 
 ```
+
+---------||------------------||------------||--------------------||------------------------||
+
+==> Some Notes :
+
+In your React Project, the best practise to create a
+components folder insider the src directory. Place all
+your reusable component files there.
+
+```
+my-project/
+└── src/
+      ├── App.jsx
+      ├── components/
+      │     ├── Header.jsx
+      │     ├── Main.jsx
+      │     └── Footer.jsx
+      └── ...
+```
