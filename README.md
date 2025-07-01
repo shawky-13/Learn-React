@@ -213,3 +213,30 @@ my-project/
       │     └── Footer.jsx
       └── ...
 ```
+
+---------||------------------||------------||--------------------||------------------------||
+
+Q. what do props help us accomplish ?
+
+=> Props in React help us pass data and configuration from a parent component to a child component.
+They allow components to be reusable and customizable by providing different values for each instance.
+
+---------||------------------||------------||--------------------||------------------------||
+
+Q. How do you pass a prop into a component?
+
+=> You pass a prop into a component by adding it as an attribute when you use the component, like this:
+
+```
+<MyComponent name="Alice" age={25} />
+```
+
+Inside MyComponent, you can access the props with props.name and props.age.
+
+---------||------------------||------------||--------------------||------------------------||
+
+Q. What data type is "props" when the component recieve it ?
+
+=>When a component receives props, the data type of props is a JavaScript object.
+
+---------||------------------||------------||--------------------||------------------------||
